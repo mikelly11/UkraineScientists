@@ -1,6 +1,7 @@
 library(shiny)
 library(leaflet)
 library(DT)
+library(shinycssloaders)
 
 ui <- shinyUI(
   navbarPage("",  theme = "custom.css",
@@ -23,7 +24,7 @@ ui <- shinyUI(
       tabPanel("Map",
                h3("Using the Map"),
                p("Click any country to filter the host laboratories located there. / Виберіть країну на карті, щоб переглянути лабораторії. / Выберите страну на карте для просмотра лабораторий."),
-        leafletOutput("leafletmap"),
+        withSpinner(leafletOutput("leafletmap")),
         dataTableOutput("tbl")
       )
     ))
