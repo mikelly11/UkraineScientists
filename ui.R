@@ -22,7 +22,7 @@ ui <- shinyUI(
       type = "tabs",
       tabPanel("Map",
                h3("Using the Map"),
-               p("Click any country to filter host laboratories located there. / Виберіть країну на карті, щоб переглянути лабораторії. / Выберите страну на карте для просмотра лабораторий."),
+               p("Click any country to filter the host laboratories located there. / Виберіть країну на карті, щоб переглянути лабораторії. / Выберите страну на карте для просмотра лабораторий."),
         leafletOutput("leafletmap"),
         dataTableOutput("tbl")
       )

@@ -20,7 +20,7 @@ world_df <- world.cities %>%
   dplyr::select(Country = country.etc, lat, long = long) %>%
   left_join(df, ., by = "Country") %>%
   select(-Zeitstempel, -lat, -long) %>%
-  rename(Funding.Possibility = 4)
+  rename(Funding.Possibility = 4) 
 
 polygon <- right_join(world, world_df, by = c('name_long' = 'Country'))
 
