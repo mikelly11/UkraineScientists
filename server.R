@@ -8,7 +8,7 @@ library(googlesheets4)
 library(sf)
 
 gs4_deauth()
-sheet_id <- "https://docs.google.com/spreadsheets/d/1sqgQcnBKe-anAeoPOF3C1F4UGMBJBT8PXXVv8JjLqUU/edit?usp=sharing"
+sheet_id <- "https://docs.google.com/spreadsheets/d/1XaBr9PN9ZJk9Oc2rWxAAskTFJWr_A6CkRKR7as5Mizc/edit?usp=sharing"
 df1 <- read_sheet(sheet_id)
 
 df <- data.frame(df1)
