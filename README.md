@@ -1,5 +1,7 @@
 # UkraineScientists
 
+![screen shot of app](/ua_app_map.PNG)
+
 ## Purpose
 Numerous laboratories have volunteered to host scientists from Ukraine. I created this Shiny app to help scientists in Ukraine find host laboratories in their field of study. This includes filtering and search functions to easily navigate the volunteer host laboratories, as well as a map function to easily filter by country.
 
